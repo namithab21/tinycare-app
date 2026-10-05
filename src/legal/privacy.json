@@ -1,0 +1,70 @@
+{
+  "title": "Privacy Policy",
+  "updated": "4 October 2026",
+  "sections": [
+    {
+      "h": "Summary",
+      "p": [
+        "TinyCare helps mothers and caregivers track postpartum recovery, children's growth, vaccinations, nutrition and activities.",
+        "TinyCare stores your information on your own device. We do not run a server that receives your health records, and we do not sell your data."
+      ]
+    },
+    {
+      "h": "Information the app stores on your device",
+      "p": [
+        "Account details: your name, phone number and a salted, hashed form of your password. The hash and a session token are kept in your device's secure storage (iOS Keychain / Android Keystore).",
+        "Health and care records you enter: delivery date and type, diet preference, allergies, blood pressure, weight, symptoms, mood, sleep and hydration logs, mood-check answers, children's names, dates of birth, measurements, vaccination records, completed activities and milestones.",
+        "App settings: language, region, theme, app-lock and reminder preferences."
+      ]
+    },
+    {
+      "h": "How information is used",
+      "p": [
+        "Your records are used only inside the app to show your recovery plan, vaccination schedule, growth history, nutrition ideas and alerts.",
+        "Vaccine reminders are scheduled as local notifications on your device. They are not sent through our servers."
+      ]
+    },
+    {
+      "h": "Sharing",
+      "p": [
+        "We do not share your records with anyone. If you choose to create a Health Passport PDF, the file is created on your device and you decide where to share it using your phone's share sheet.",
+        "If crash reporting is enabled in your version of the app, anonymous technical crash information (such as the error and device model) may be sent to our crash-reporting provider. It does not include the health records you enter, your name or your phone number."
+      ]
+    },
+    {
+      "h": "Children's information",
+      "p": [
+        "TinyCare is meant to be used by parents and caregivers, not by children. Children's details are entered by an adult and stay on the adult's device."
+      ]
+    },
+    {
+      "h": "Security",
+      "p": [
+        "Credentials are kept in hardware-backed secure storage where available. You can lock the app with Face ID, fingerprint or your device passcode. The app communicates over encrypted (HTTPS) connections only. No method of storage is perfectly secure, so please also protect your device with a screen lock."
+      ]
+    },
+    {
+      "h": "Your choices and deleting your data",
+      "p": [
+        "You can edit or remove any record in the app. To erase everything, open Settings and choose \"Delete account and data\". This permanently removes your account, records, reminders and settings from the device. Because data is stored only on your device, uninstalling the app also removes it.",
+        "Because there is no cloud copy, we cannot recover lost data or a forgotten password."
+      ]
+    },
+    {
+      "h": "Medical disclaimer",
+      "p": [
+        "TinyCare provides general information. It is not a substitute for professional medical advice, diagnosis or treatment. In an emergency, contact your doctor or the nearest hospital."
+      ]
+    },
+    {
+      "h": "Changes to this policy",
+      "p": [
+        "If we change this policy, we will update the date above and, for significant changes, tell you in the app."
+      ]
+    },
+    {
+      "h": "Contact",
+      "p": ["Questions about privacy: support@tinycare.app"]
+    }
+  ]
+}

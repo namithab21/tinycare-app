@@ -1,0 +1,55 @@
+{
+  "title": "Terms of Service",
+  "updated": "4 October 2026",
+  "sections": [
+    {
+      "h": "Acceptance",
+      "p": [
+        "By creating an account or using TinyCare you agree to these Terms. If you do not agree, please do not use the app."
+      ]
+    },
+    {
+      "h": "What TinyCare is — and is not",
+      "p": [
+        "TinyCare offers general educational information and record-keeping tools for postpartum recovery, child growth, vaccinations, nutrition and play.",
+        "It is not a medical device and does not diagnose, treat or prevent any condition. Vaccination dates are based on India's Universal Immunisation Programme and are a guide only; your doctor or health worker decides what is right for you and your child.",
+        "If you think you or your child may have a medical emergency, call your doctor or go to the nearest hospital immediately."
+      ]
+    },
+    {
+      "h": "Your account",
+      "p": [
+        "You are responsible for keeping your password and device secure. Information you enter should be accurate and about you or children in your care.",
+        "Data is stored on your device only. We cannot recover data or reset a forgotten password."
+      ]
+    },
+    {
+      "h": "Acceptable use",
+      "p": [
+        "Do not misuse the app, attempt to break its security, or use it to harm others. Use it only for lawful, personal and family care purposes."
+      ]
+    },
+    {
+      "h": "Intellectual property",
+      "p": [
+        "The app, its design and its original content belong to its owner. You keep ownership of the information you enter."
+      ]
+    },
+    {
+      "h": "No warranty and limitation of liability",
+      "p": [
+        "The app is provided \"as is\". To the fullest extent permitted by law, we are not liable for decisions made based on the app's information or for loss of data stored on your device."
+      ]
+    },
+    {
+      "h": "Changes",
+      "p": [
+        "We may update these Terms from time to time. Continued use after an update means you accept the new Terms."
+      ]
+    },
+    {
+      "h": "Contact",
+      "p": ["Questions about these Terms: support@tinycare.app"]
+    }
+  ]
+}
