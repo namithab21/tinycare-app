@@ -1,0 +1,11 @@
+node_modules
+dist
+dist-android
+dist-ios
+.git
+.expo
+server/data
+store
+shots
+.env
+.env.*

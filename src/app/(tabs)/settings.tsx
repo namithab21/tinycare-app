@@ -11,7 +11,7 @@ import { useTheme } from '@/theme';
 import type { Lang, ThemePref } from '@/types';
 
 export default function SettingsTab() {
-  const { state, t, update, signOut, deleteAccount } = useStore();
+  const { state, t, update, signOut, deleteAccount, sync, syncNow } = useStore();
   const c = useTheme();
   const [msg, setMsg] = useState('');
   const s = state.settings;
@@ -36,7 +36,7 @@ export default function SettingsTab() {
   const confirmDelete = () =>
     Alert.alert(t.deleteTitle, t.deleteBody, [
       { text: t.cancel, style: 'cancel' },
-      { text: t.deleteConfirmBtn, style: 'destructive', onPress: () => void deleteAccount() },
+      { text: t.deleteConfirmBtn, style: 'destructive', onPress: () => void deleteAccount().then((ok) => { if (!ok) Alert.alert(t.deleteTitle, t.deleteFailed); }) },
     ]);
 
   const version = Constants.expoConfig?.version ?? '1.0.0';
@@ -48,6 +48,25 @@ export default function SettingsTab() {
         <Txt variant="heading">{state.account?.name}</Txt>
         <Txt variant="muted">{state.account?.phone}</Txt>
       </Card>
+
+      {sync.status !== 'off' ? (
+        <>
+          <SectionTitle>{t.syncTitle}</SectionTitle>
+          <Card>
+            <Txt>
+              {sync.status === 'synced'
+                ? t.syncSynced
+                : sync.status === 'syncing'
+                  ? t.syncSyncing
+                  : sync.status === 'error'
+                    ? t.syncError
+                    : t.syncPending}
+            </Txt>
+            {sync.lastSyncedAt ? <Txt variant="muted">{new Date(sync.lastSyncedAt).toLocaleString()}</Txt> : null}
+            <Button variant="secondary" title={t.syncNowBtn} onPress={() => void syncNow()} />
+          </Card>
+        </>
+      ) : null}
 
       <SectionTitle>{t.language}</SectionTitle>
       <ChipRow>

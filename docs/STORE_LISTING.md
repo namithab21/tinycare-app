@@ -17,11 +17,11 @@ TinyCare is a private, offline health companion for mothers and little ones.
 • Health Passport PDF to share with your doctor
 • English, हिन्दी, ಕನ್ನಡ, తెలుగు, தமிழ்; light and dark mode; Face ID / fingerprint lock
 
-Your data stays on your phone. No ads, no tracking, no server account. Delete everything any time from Settings.
+Your data stays on your phone by default. Optional encrypted cloud sync lets you use the same account on more devices and on the web. No ads, no tracking. Delete everything any time from Settings.
 
 TinyCare provides general information and is not a substitute for professional medical advice.
 
-**Privacy policy URL:** https://lakshyad310306.github.io/tinycare-app/privacy.html
+**Privacy policy URL:** https://namithab21.github.io/tinycare-app/privacy.html
 **Support URL / email:** replace with yours
 **Screenshots:** `store/screenshots/` — iPhone 6.9" (1320×2868), iPad 13" (2064×2752), Android phone (1080×1920)
 **Still to create:** Play feature graphic (1024×500) and 512×512 Play icon (base on `assets/icon.png`).

@@ -50,3 +50,5 @@ GoogleService-Info.plist
 shots/
 dist-android/
 dist-ios/
+server/data/
+/android

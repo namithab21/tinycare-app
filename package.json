@@ -10,7 +10,11 @@
     "web": "expo start --web",
     "typecheck": "tsc --noEmit",
     "legal": "node scripts/build_legal.mjs",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "build:web": "expo export --platform web --output-dir dist",
+    "server": "node server/index.mjs",
+    "test": "node --test server/server.test.mjs && node --test --experimental-strip-types tests/sync.test.mjs",
+    "start:prod": "NODE_ENV=production node server/index.mjs"
   },
   "dependencies": {
     "@expo/metro-runtime": "~57.0.16",

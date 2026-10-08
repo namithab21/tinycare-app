@@ -29,7 +29,7 @@ export default function AuthScreen() {
       setBusy(true);
       const res = await signUp(name, cleanPhone, password);
       setBusy(false);
-      if (!res.ok) setError(t.errRequired);
+      if (!res.ok) setError(res.reason === 'taken' ? t.errPhoneTaken : res.reason === 'network' ? t.errNetwork : t.errRequired);
     } else {
       if (!phone.trim() || !password) return setError(t.errRequired);
       setBusy(true);
@@ -107,7 +107,7 @@ export default function AuthScreen() {
             onPress={() =>
               Alert.alert(t.deleteTitle, t.deleteBody, [
                 { text: t.cancel, style: 'cancel' },
-                { text: t.deleteConfirmBtn, style: 'destructive', onPress: () => void deleteAccount() },
+                { text: t.deleteConfirmBtn, style: 'destructive', onPress: () => void deleteAccount().then((ok) => { if (!ok) Alert.alert(t.deleteTitle, t.deleteFailed); }) },
               ])
             }
           />

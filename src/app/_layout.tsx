@@ -7,6 +7,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { Button } from '@/components/ui';
 import { initCrashReporting, reportError } from '@/services/crash';
 import { setupNotificationHandler } from '@/services/notifications';
+import '@/services/webAlert';
 import { AppStoreProvider, useStore } from '@/store/AppStore';
 import { useTheme } from '@/theme';
 

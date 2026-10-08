@@ -1,12 +1,12 @@
 {
   "title": "Privacy Policy",
-  "updated": "4 October 2026",
+  "updated": "8 October 2026",
   "sections": [
     {
       "h": "Summary",
       "p": [
         "TinyCare helps mothers and caregivers track postpartum recovery, children's growth, vaccinations, nutrition and activities.",
-        "TinyCare stores your information on your own device. We do not run a server that receives your health records, and we do not sell your data."
+        "By default TinyCare stores your information on your own device. If the version of the app you use is connected to a TinyCare server (the optional cloud sync feature, shown as \"Cloud sync\" in Settings), a copy is also kept on that server so you can use your account on more than one device. We do not sell your data or use it for advertising."
       ]
     },
     {
@@ -32,6 +32,14 @@
       ]
     },
     {
+      "h": "Optional cloud sync (when connected to a TinyCare server)",
+      "p": [
+        "What is sent: your name, phone number, a salted hash of your password, and the records you enter (profile, children, vaccinations, growth, recovery logs, mood logs, and language/region/theme preferences). The notification inbox, app-lock and reminder switches stay on the device.",
+        "Why: so the same account and records are available on your other devices and in the web version. The server operator can see your name and phone number; your health records are stored encrypted and are used only to return them to you.",
+        "Who runs the server: the organisation that published the version of the app you installed. If you do not want cloud sync, use a version without a server connection."
+      ]
+    },
+    {
       "h": "Children's information",
       "p": [
         "TinyCare is meant to be used by parents and caregivers, not by children. Children's details are entered by an adult and stay on the adult's device."
@@ -40,14 +48,15 @@
     {
       "h": "Security",
       "p": [
-        "Credentials are kept in hardware-backed secure storage where available. You can lock the app with Face ID, fingerprint or your device passcode. The app communicates over encrypted (HTTPS) connections only. No method of storage is perfectly secure, so please also protect your device with a screen lock."
+        "Credentials are kept in hardware-backed secure storage where available (iOS Keychain / Android Keystore). In the web version the browser offers no equivalent secure storage, so please use the web version only on devices you trust. You can lock the app with Face ID, fingerprint or your device passcode.",
+        "The app talks to a TinyCare server only over encrypted (HTTPS) connections, and only when cloud sync is enabled. On the server your password is stored only as a salted hash, your health records are encrypted at rest, and sign-in attempts are rate limited. No method of storage is perfectly secure, so please also protect your device with a screen lock."
       ]
     },
     {
       "h": "Your choices and deleting your data",
       "p": [
-        "You can edit or remove any record in the app. To erase everything, open Settings and choose \"Delete account and data\". This permanently removes your account, records, reminders and settings from the device. Because data is stored only on your device, uninstalling the app also removes it.",
-        "Because there is no cloud copy, we cannot recover lost data or a forgotten password."
+        "You can edit or remove any record in the app. To erase everything, open Settings and choose \"Delete account and data\". This permanently removes your account, records, reminders and settings from the device and, when cloud sync is enabled, from the server as well.",
+        "Without cloud sync there is no copy elsewhere, so we cannot recover lost data or a forgotten password. With cloud sync, deleting your account on one device removes the server copy; other devices signed in to the same account will lose access."
       ]
     },
     {
@@ -64,7 +73,9 @@
     },
     {
       "h": "Contact",
-      "p": ["Questions about privacy: support@tinycare.app"]
+      "p": [
+        "Questions about privacy: support@tinycare.app"
+      ]
     }
   ]
 }

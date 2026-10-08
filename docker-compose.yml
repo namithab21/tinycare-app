@@ -1,0 +1,14 @@
+# docker compose up -d --build     (create .env first - see docs/DEPLOY.md)
+services:
+  tinycare:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8080:8080"   # put a TLS reverse proxy (Caddy/nginx) in front; never expose plain http publicly
+    environment:
+      TINYCARE_SECRET: ${TINYCARE_SECRET:?set TINYCARE_SECRET}
+      TINYCARE_DATA_KEY: ${TINYCARE_DATA_KEY:?set TINYCARE_DATA_KEY}
+    volumes:
+      - tinycare-data:/data
+volumes:
+  tinycare-data:

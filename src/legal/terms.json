@@ -1,6 +1,6 @@
 {
   "title": "Terms of Service",
-  "updated": "4 October 2026",
+  "updated": "8 October 2026",
   "sections": [
     {
       "h": "Acceptance",
@@ -20,7 +20,8 @@
       "h": "Your account",
       "p": [
         "You are responsible for keeping your password and device secure. Information you enter should be accurate and about you or children in your care.",
-        "Data is stored on your device only. We cannot recover data or reset a forgotten password."
+        "Data is stored on your device only. We cannot recover data or reset a forgotten password.",
+        "If your version of the app is connected to a TinyCare server, your account and records are also stored there so you can sign in on other devices. You can delete the account, including the server copy, at any time from Settings."
       ]
     },
     {
@@ -49,7 +50,9 @@
     },
     {
       "h": "Contact",
-      "p": ["Questions about these Terms: support@tinycare.app"]
+      "p": [
+        "Questions about these Terms: support@tinycare.app"
+      ]
     }
   ]
 }

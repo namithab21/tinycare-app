@@ -75,6 +75,7 @@ export async function clearSession(): Promise<void> {
 export async function wipeSecureData(): Promise<void> {
   await secureStorage.remove(CRED_KEY);
   await secureStorage.remove(SESSION_KEY);
+  await secureStorage.remove('tc_token'); // cloud-sync token (see services/api.ts)
 }
 
 export async function biometricsAvailable(): Promise<boolean> {
